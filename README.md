@@ -1,5 +1,5 @@
 # yasmin-
-<title>Coffee Shop</title>
+Coffee Shop
 <p>I make this coffee shop because I am interested in selling coffee  and I want it reach for every people out there who likes coffee.
 </P>
 This is coffee shop site it have features like
