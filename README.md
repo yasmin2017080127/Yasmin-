@@ -1,4 +1,4 @@
-# yasmin-
+# Coffee Shop
 Coffee Shop
 <p>I make this coffee shop because I am interested in selling coffee  and I want it reach for every people out there who likes coffee.
 </P>
