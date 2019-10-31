@@ -12,4 +12,4 @@ This is coffee shop site it have features like
 <li>Easily accesseble</li>
 <li>Usable forms</>
 <h4>The plan for the project </h4>
-<p>I planned to make this coffee shop website easily accessable for every one.
+<p>I planned to make this coffee shop website easily accessable for every one
