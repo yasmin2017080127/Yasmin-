@@ -15,7 +15,11 @@ This is coffee shop site it have features like
 <p>I planned to make this coffee shop website easily accessable for every one</p>
 <li>week 8: set up </li>
 <li>week 9:50% of home page</li>
-<li>week 10:b finish home page</li>
+<li>week 10:Finish home page</li>
+<li>week 11:finish gallery page</li>
+<li>week 12:finish ordering page and information page </li>
+<li>week 13:finish back end</li>
+<li>weeek 14:finish project</li>
 
 
   
