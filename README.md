@@ -13,5 +13,11 @@ This is coffee shop site it have features like
 <li>Contrasting color schemeusable</li> 
 <li>Easily accesseble</li>
 <li>Usable forms</>
-<h4>The plan for the project </h4>
-<p>I planned to make this coffee shop website easily accessable for every one
+<h4>Plan for the project </h4>
+<p>I planned to make this coffee shop website easily accessable for every one</p>
+<li>Three weeks to finish the frontend</li>
+<li>Two weeks to finish the backend</li>
+<li>make adjustments</li>
+<li>submit when its done</li>
+
+  
