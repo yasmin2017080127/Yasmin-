@@ -15,9 +15,9 @@ This is coffee shop site it have features like
 <li>Usable forms</>
 <h4>Plan for the project </h4>
 <p>I planned to make this coffee shop website easily accessable for every one</p>
-<li>Three weeks to finish the frontend</li>
-<li>Two weeks to finish the backend</li>
-<li>make adjustments</li>
-<li>submit when its done</li>
+<li>week 8: set up </li>
+<li>week 9:50% of home page</li>
+<li>week 10:b finish home page</li>
+
 
   
