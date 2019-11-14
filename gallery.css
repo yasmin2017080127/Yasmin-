@@ -2,11 +2,11 @@ body{
     padding-top: 70px; 
 }
 .jumbotron {
-    color: brown; 
-    background: brown;
+    color: blue; 
+    background: blue;
  }
  .navbar-inverse{
-     background: brown; 
+     background: blue; 
  }
 
  a{
