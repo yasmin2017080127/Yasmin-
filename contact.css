@@ -6,10 +6,6 @@ html, body{
 body{
     width: 100%
     height:100vh;
-    background: url(ll3.jpg);
-    background repeat: no-repeat
-    background-position: center;
-    background-size: cover;
     display: table;
     font-family: Quicksand;
 }
