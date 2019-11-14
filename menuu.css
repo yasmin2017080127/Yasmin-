@@ -1,16 +1,17 @@
-body{
+.box{
     padding-top: 70px; 
     }
     .jumbotron {
     color: #2c3e50; 
-    background: #d4d7d8;
+    background: #69655e;
+    opacity: 0.4;
     }
     .navbar-inverse{
     background:#2c3e50; 
     }
     
     a{
-    color: white;
+    color:white;
     }
     
     .navbar-inverse .navbar-nav>li>a{
@@ -23,7 +24,7 @@ body{
   max-width: 680px;
   margin: 0 auto;
   display: block;
-  color: rgb(92, 92, 92);
+  color: rgb(247, 241, 241);
 }
 
 .menu-section {
@@ -62,7 +63,7 @@ body{
   font-family: arial;
   margin-top: -22px;
 }
-{
+body{
     font-family: latha;
     color:white;
     background: linear-gradient(
@@ -75,7 +76,10 @@ body{
 
 .box{ width: 900px;
 float:right;
-border:1px solid none;}
+border:1px solid none;
+
+
+}
 
 .box ul li{
         width:120px;
