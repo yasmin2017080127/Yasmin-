@@ -16,18 +16,18 @@ border:1px solid none;
 
 }
 
-.box ul li{
+.boxn ul li{
         width:120px;
         float:left;
         margin: 10px auto;
         text-align: center;
 }
 
-.box ul li a{ text-decoration: none;
+.boxn ul li a{ text-decoration: none;
 color:darkgrey;}
 
-.box ul li:hover{ background-color: darkorange;}
-.box ul li a:hover{ color:white;}
+.boxn ul li:hover{ background-color: darkorange;}
+.boxn ul li a:hover{ color:white;}
 
 .wd{
     width: 300px;
