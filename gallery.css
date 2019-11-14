@@ -1,21 +1,21 @@
 body{
-    padding-top: 70px; 
+padding-top: 70px; 
 }
 .jumbotron {
-    color: #fff; 
-    background: #fff;
- }
- .navbar-inverse{
-     background: #fff; 
- }
+color: #2c3e50; 
+background: #d4d7d8;
+}
+.navbar-inverse{
+background:#2c3e50; 
+}
 
- a{
-     color: white;
- }
+a{
+color: white;
+}
 
- .navbar-inverse .navbar-nav>li>a{
-     color: white;
- }
- .navbar-inverse .navbar-brand{
-     color:white; 
- }
+.navbar-inverse .navbar-nav>li>a{
+color: rgb(180, 45, 45);
+}
+.navbar-inverse .navbar-brand{
+color:rgb(184, 41, 41); 
+}
