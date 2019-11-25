@@ -4,6 +4,7 @@
 I planned to use 
 <li>html</li>
 <li>java script</li>
+<li>node js</li>
 <li>CSS</li> to build this project.
 <h3>features</h3>
 This is coffee shop site it have features like
@@ -16,9 +17,10 @@ This is coffee shop site it have features like
 <li>week 9:50% of home page</li>
 <li>week 10:Finish home page</li>
 <li>week 11:finish gallery page</li>
-<li>week 12:finish ordering page and information page </li>
-<li>week 13:finish back end</li>
-<li>weeek 14:finish project</li>
+<li>week 12:finish login </li>
+<li>week 13:finish ordering page and information page </li>
+<li>weeek 14:finish backend</li>
+
 
 
   
