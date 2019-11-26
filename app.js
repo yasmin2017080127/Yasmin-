@@ -1,51 +1,64 @@
-var express=require("express"); 
-var bodyParser=require("body-parser"); 
+const express = require('express');
+const expressLayouts = require('express-ejs-layouts');
+const mongoose = require('mongoose');
+const passport = require('passport');
+const flash = require('connect-flash');
+const session = require('express-session');
 
-const mongoose = require('mongoose'); 
-mongoose.connect('mongodb://localhost:27017/gfg'); 
-var db=mongoose.connection; 
-db.on('error', console.log.bind(console, "connection error")); 
-db.once('open', function(callback){ 
-	console.log("connection succeeded"); 
-}) 
+const app = express();
 
-var app=express() 
+// Passport Config
+require('./config/passport')(passport);
 
+// DB Config
+const db = require('./config/keys').mongoURI;
 
-app.use(bodyParser.json()); 
-app.use(express.static('public')); 
-app.use(bodyParser.urlencoded({ 
-	extended: true
-})); 
+// Connect to MongoDB
+mongoose
+  .connect(
+    db, {
+      useNewUrlParser: true
+    }
+  )
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
 
-app.post('/sign_up', function(req,res){ 
-	var name = req.body.name; 
-	var email =req.body.email; 
-	var pass = req.body.password; 
-	var phone =req.body.phone; 
+// EJS
+app.use(expressLayouts);
+app.set('view engine', 'ejs');
 
-	var data = { 
-		"name": name, 
-		"email":email, 
-		"password":pass, 
-		"phone":phone 
-	} 
-db.collection('details').insertOne(data,function(err, collection){ 
-		if (err) throw err; 
-		console.log("Record inserted Successfully"); 
-			
-	}); 
-		
-	return res.redirect('signup_success.html'); 
-}) 
+// Express body parser
+app.use(express.urlencoded({
+  extended: true
+}));
 
+// Express session
+app.use(
+  session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+  })
+);
 
-app.get('/',function(req,res){ 
-res.set({ 
-	'Access-control-Allow-Origin': '*'
-	}); 
-return res.redirect('index.html'); 
-}).listen(3000) 
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
+// Connect flash
+app.use(flash());
+// Global variables
+app.use(function (req, res, next) {
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error = req.flash('error');
+  next();
+});
 
-console.log("server listening at port 3000"); 
+// Routes
+app.use('/', require('./routes/index.js'));
+app.use('/users', require('./routes/users.js'));
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, console.log(`Server started on port ${PORT}`));

@@ -1,21 +1,40 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "<h1><a href=\"https://yasmin2017080127.github.io/coffee-shop-website/index.html\">Coffee Shop</a></h1>\r <p>Its a coffee shop website which you can order online easily and get information about the coffee shop. </P>\r <h2> Technologies</h2>\r I planned to use \r <li>html</li>\r <li>java script</li>\r <li>node js</li>\r <li>CSS</li> to build this project.\r <h3>features</h3>\r This is coffee shop site it have features like\r <li>Its accessible to all users</li>\r <li>Contrasting color schemeusable</li> \r <li>Easily accesseble</li>\r <li>Usable forms</>\r <h4>Plan for the project </h4>\r <li>week 8: set up </li>\r <li>week 9:50% of home page</li>\r <li>week 10:Finish home page</li>\r <li>week 11:finish gallery page</li>\r <li>week 12:finish login </li>\r <li>week 13:finish ordering page and information page </li>\r <li>weeek 14:finish backend</li>",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body": "^5.1.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^5.3.4"
+    "express-session": "^1.17.0",
+    "mongodb": "^3.3.4",
+    "mongoose": "^5.7.12",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasmin2017080127/coffee-shop-website.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/yasmin2017080127/coffee-shop-website/issues"
+  },
+  "homepage": "https://github.com/yasmin2017080127/coffee-shop-website#readme"
 }
